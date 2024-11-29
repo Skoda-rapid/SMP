@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Python: module shared.classes.calculator.calculator</title>
+</head><body>
+
+<table class="heading">
+<tr class="heading-text decor">
+<td class="title">&nbsp;<br><strong class="title"><a href="shared.html" class="white">shared</a>.<a href="shared.classes.html" class="white">classes</a>.<a href="shared.classes.calculator.html" class="white">calculator</a>.calculator</strong></td>
+<td class="extra"><a href=".">index</a><br><a href="file:d%3A%5Cnu_lp%5C3_year%5C1_semestr%5Cspl%5Clw%5Cshared%5Cclasses%5Ccalculator%5Ccalculator.py">d:\nu_lp\3_year\1_semestr\spl\lw\shared\classes\calculator\calculator.py</a></td></tr></table>
+    <p><span class="code">Модуль&nbsp;`calculator.py`&nbsp;реалізує&nbsp;клас&nbsp;`<a href="#Calculator">Calculator</a>`,&nbsp;який&nbsp;забезпечує&nbsp;базові&nbsp;функції&nbsp;калькулятора,&nbsp;<br>
+такі&nbsp;як&nbsp;арифметичні&nbsp;операції,&nbsp;управління&nbsp;пам'яттю&nbsp;та&nbsp;ведення&nbsp;історії.</span></p>
+<p>
+<table class="section">
+<tr class="decor pkg-content-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Modules</strong></td></tr>
+    
+<tr><td class="decor pkg-content-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><table><tr><td class="multicolumn"><a href="shared.functions.manage_app_settings.html">shared.functions.manage_app_settings</a><br>
+</td><td class="multicolumn"></td><td class="multicolumn"></td><td class="multicolumn"></td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor index-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Classes</strong></td></tr>
+    
+<tr><td class="decor index-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><dl>
+<dt class="heading-text"><a href="builtins.html#object">builtins.object</a>
+</dt><dd>
+<dl>
+<dt class="heading-text"><a href="shared.classes.calculator.calculator.html#Calculator">Calculator</a>
+</dt></dl>
+</dd>
+</dl>
+ <p>
+<table class="section">
+<tr class="decor title-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><a name="Calculator">class <strong>Calculator</strong></a>(<a href="builtins.html#object">builtins.object</a>)</td></tr>
+    
+<tr><td class="decor title-decor" rowspan=2><span class="code">&nbsp;&nbsp;&nbsp;</span></td>
+<td class="decor title-decor" colspan=2><span class="code"><a href="#Calculator">Calculator</a>(current_value=0,&nbsp;memory=0)<br>
+&nbsp;<br>
+Клас&nbsp;`<a href="#Calculator">Calculator</a>`&nbsp;забезпечує&nbsp;функціональність&nbsp;для&nbsp;виконання&nbsp;математичних&nbsp;операцій,<br>
+управління&nbsp;пам'яттю&nbsp;та&nbsp;ведення&nbsp;історії&nbsp;обчислень.<br>
+&nbsp;<br>
+Атрибути:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;current_value&nbsp;(float):&nbsp;Поточне&nbsp;значення&nbsp;калькулятора.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;memory&nbsp;(float):&nbsp;Значення,&nbsp;збережене&nbsp;в&nbsp;пам'яті&nbsp;калькулятора.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;history&nbsp;(list):&nbsp;Список,&nbsp;який&nbsp;містить&nbsp;історію&nbsp;виконаних&nbsp;операцій.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;decimal_places&nbsp;(int):&nbsp;Кількість&nbsp;знаків&nbsp;після&nbsp;коми&nbsp;для&nbsp;відображення&nbsp;результату.<br>&nbsp;</span></td></tr>
+<tr><td>&nbsp;</td>
+<td class="singlecolumn">Methods defined here:<br>
+<dl><dt><a name="Calculator-__init__"><strong>__init__</strong></a>(self, current_value=0, memory=0)</dt><dd><span class="code">Ініціалізує&nbsp;екземпляр&nbsp;класу&nbsp;<a href="#Calculator">Calculator</a>.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;current_value&nbsp;(float):&nbsp;Початкове&nbsp;значення&nbsp;калькулятора&nbsp;(за&nbsp;замовчуванням&nbsp;0).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;memory&nbsp;(float):&nbsp;Початкове&nbsp;значення&nbsp;пам'яті&nbsp;калькулятора&nbsp;(за&nbsp;замовчуванням&nbsp;0).</span></dd></dl>
+
+<dl><dt><a name="Calculator-add_to_history"><strong>add_to_history</strong></a>(self, param_1, operator, param_2, result)</dt><dd><span class="code">Додає&nbsp;виконану&nbsp;операцію&nbsp;до&nbsp;історії.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;param_1&nbsp;(float):&nbsp;Перше&nbsp;число.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operator&nbsp;(str):&nbsp;Використаний&nbsp;оператор.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;param_2&nbsp;(float):&nbsp;Друге&nbsp;число.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;result&nbsp;(float):&nbsp;Результат&nbsp;виконаної&nbsp;операції.</span></dd></dl>
+
+<dl><dt><a name="Calculator-add_to_memory"><strong>add_to_memory</strong></a>(self, param)</dt><dd><span class="code">Додає&nbsp;число&nbsp;до&nbsp;пам'яті&nbsp;калькулятора.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;param&nbsp;(float):&nbsp;Число,&nbsp;яке&nbsp;потрібно&nbsp;додати&nbsp;до&nbsp;пам'яті.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Якщо&nbsp;введене&nbsp;значення&nbsp;не&nbsp;є&nbsp;числом.</span></dd></dl>
+
+<dl><dt><a name="Calculator-calc"><strong>calc</strong></a>(self, number_1, operator, number_2=None)</dt><dd><span class="code">Виконує&nbsp;математичну&nbsp;операцію&nbsp;на&nbsp;основі&nbsp;введених&nbsp;чисел&nbsp;та&nbsp;оператора.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;number_1&nbsp;(float):&nbsp;Перше&nbsp;число.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operator&nbsp;(str):&nbsp;Оператор&nbsp;для&nbsp;виконання&nbsp;операції.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;number_2&nbsp;(float,&nbsp;optional):&nbsp;Друге&nbsp;число&nbsp;(для&nbsp;унарних&nbsp;операторів&nbsp;не&nbsp;потрібне).<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;Результат&nbsp;операції.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Якщо&nbsp;операція&nbsp;не&nbsp;може&nbsp;бути&nbsp;виконана.</span></dd></dl>
+
+<dl><dt><a name="Calculator-validate_number"><strong>validate_number</strong></a>(self, value)</dt><dd><span class="code">Перевіряє,&nbsp;чи&nbsp;є&nbsp;введене&nbsp;значення&nbsp;числом.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;value:&nbsp;Значення&nbsp;для&nbsp;перевірки.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float:&nbsp;Перетворене&nbsp;числове&nbsp;значення.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Якщо&nbsp;введене&nbsp;значення&nbsp;не&nbsp;є&nbsp;числом.</span></dd></dl>
+
+<dl><dt><a name="Calculator-validate_operator"><strong>validate_operator</strong></a>(self, operator)</dt><dd><span class="code">Перевіряє,&nbsp;чи&nbsp;є&nbsp;введений&nbsp;оператор&nbsp;коректним.<br>
+&nbsp;<br>
+Args:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;operator&nbsp;(str):&nbsp;Оператор&nbsp;для&nbsp;перевірки.<br>
+&nbsp;<br>
+Returns:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;str:&nbsp;Перевірений&nbsp;оператор.<br>
+&nbsp;<br>
+Raises:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;ValueError:&nbsp;Якщо&nbsp;оператор&nbsp;некоректний.</span></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><span class="code">dictionary&nbsp;for&nbsp;instance&nbsp;variables</span></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><span class="code">list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object</span></dd>
+</dl>
+</td></tr></table></td></tr></table><p>
+<table class="section">
+<tr class="decor data-decor heading-text">
+<td class="section-title" colspan=3>&nbsp;<br><strong class="bigsection">Data</strong></td></tr>
+    
+<tr><td class="decor data-decor"><span class="code">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td><td>&nbsp;</td>
+<td class="singlecolumn"><strong>operations</strong> = {'%': &lt;function find_remainder&gt;, '*': &lt;function multiply&gt;, '+': &lt;function add&gt;, '-': &lt;function subtract&gt;, '/': &lt;function divide&gt;, '^': &lt;function to_power&gt;, 'sqrt': &lt;function find_sqrt&gt;}</td></tr></table>
+</body></html>
